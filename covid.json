@@ -1,0 +1,438 @@
+{
+  "type": "index_parallel",
+  "spec": {
+    "dataSchema": {
+      "dataSource": "covid-data",
+      "timestampSpec": {
+        "column": "date",
+        "format": "auto",
+        "missingValue": null
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+          {
+            "type": "string",
+            "name": "continent",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "extreme_poverty",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "female_smokers",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "hosp_patients",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "hosp_patients_per_million",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "icu_patients",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "icu_patients_per_million",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "iso_code",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "location",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "male_smokers",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "new_tests",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "new_tests_per_thousand",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "new_tests_smoothed",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "new_tests_smoothed_per_thousand",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "positive_rate",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "tests_per_case",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "tests_units",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "total_cases",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "total_cases_per_million",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "total_deaths",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "total_deaths_per_million",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "total_tests",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "total_tests_per_thousand",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "weekly_hosp_admissions",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "weekly_hosp_admissions_per_million",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "weekly_icu_admissions",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          },
+          {
+            "type": "string",
+            "name": "weekly_icu_admissions_per_million",
+            "multiValueHandling": "SORTED_ARRAY",
+            "createBitmapIndex": true
+          }
+        ],
+        "dimensionExclusions": [
+          "date",
+          "sum_human_development_index",
+          "new_cases_smoothed_per_million",
+          "new_deaths_smoothed",
+          "life_expectancy",
+          "population_density",
+          "new_deaths_per_million",
+          "sum_new_deaths_smoothed_per_million",
+          "aged_65_older",
+          "aged_70_older",
+          "new_cases_per_million",
+          "cardiovasc_death_rate",
+          "sum_median_age",
+          "new_deaths_smoothed_per_million",
+          "sum_stringency_index",
+          "sum_handwashing_facilities",
+          "diabetes_prevalence",
+          "sum_cardiovasc_death_rate",
+          "human_development_index",
+          "sum_new_cases_smoothed_per_million",
+          "handwashing_facilities",
+          "sum_new_cases",
+          "hospital_beds_per_thousand",
+          "sum_gdp_per_capita",
+          "gdp_per_capita",
+          "sum_diabetes_prevalence",
+          "median_age",
+          "sum_new_deaths",
+          "new_cases",
+          "sum_population_density",
+          "new_cases_smoothed",
+          "count",
+          "sum_life_expectancy",
+          "sum_population",
+          "sum_aged_65_older",
+          "sum_aged_70_older",
+          "population",
+          "stringency_index",
+          "sum_new_cases_per_million",
+          "new_deaths",
+          "sum_new_cases_smoothed",
+          "sum_new_deaths_per_million",
+          "sum_new_deaths_smoothed",
+          "sum_hospital_beds_per_thousand"
+        ]
+      },
+      "metricsSpec": [
+        {
+          "type": "count",
+          "name": "count"
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_aged_65_older",
+          "fieldName": "aged_65_older",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_aged_70_older",
+          "fieldName": "aged_70_older",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_cardiovasc_death_rate",
+          "fieldName": "cardiovasc_death_rate",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_diabetes_prevalence",
+          "fieldName": "diabetes_prevalence",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_gdp_per_capita",
+          "fieldName": "gdp_per_capita",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_handwashing_facilities",
+          "fieldName": "handwashing_facilities",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_hospital_beds_per_thousand",
+          "fieldName": "hospital_beds_per_thousand",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_human_development_index",
+          "fieldName": "human_development_index",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_life_expectancy",
+          "fieldName": "life_expectancy",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_median_age",
+          "fieldName": "median_age",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_new_cases",
+          "fieldName": "new_cases",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_new_cases_per_million",
+          "fieldName": "new_cases_per_million",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_new_cases_smoothed",
+          "fieldName": "new_cases_smoothed",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_new_cases_smoothed_per_million",
+          "fieldName": "new_cases_smoothed_per_million",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_new_deaths",
+          "fieldName": "new_deaths",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_new_deaths_per_million",
+          "fieldName": "new_deaths_per_million",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_new_deaths_smoothed",
+          "fieldName": "new_deaths_smoothed",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_new_deaths_smoothed_per_million",
+          "fieldName": "new_deaths_smoothed_per_million",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_population",
+          "fieldName": "population",
+          "expression": null
+        },
+        {
+          "type": "doubleSum",
+          "name": "sum_population_density",
+          "fieldName": "population_density",
+          "expression": null
+        },
+        {
+          "type": "longSum",
+          "name": "sum_stringency_index",
+          "fieldName": "stringency_index",
+          "expression": null
+        }
+      ],
+      "granularitySpec": {
+        "type": "uniform",
+        "segmentGranularity": "MONTH",
+        "queryGranularity": "DAY",
+        "rollup": true,
+        "intervals": null
+      },
+      "transformSpec": {
+        "filter": null,
+        "transforms": []
+      }
+    },
+    "ioConfig": {
+      "type": "index_parallel",
+      "inputSource": {
+        "type": "http",
+        "uris": [
+          "https://covid.ourworldindata.org/data/owid-covid-data.csv"
+        ],
+        "httpAuthenticationUsername": null,
+        "httpAuthenticationPassword": null
+      },
+      "inputFormat": {
+        "type": "csv",
+        "columns": [],
+        "listDelimiter": null,
+        "findColumnsFromHeader": true,
+        "skipHeaderRows": 0
+      },
+      "appendToExisting": false
+    },
+    "tuningConfig": {
+      "type": "index_parallel",
+      "maxRowsPerSegment": 5000000,
+      "maxRowsInMemory": 1000000,
+      "maxBytesInMemory": 0,
+      "maxTotalRows": null,
+      "numShards": null,
+      "splitHintSpec": null,
+      "partitionsSpec": {
+        "type": "dynamic",
+        "maxRowsPerSegment": 5000000,
+        "maxTotalRows": null
+      },
+      "indexSpec": {
+        "bitmap": {
+          "type": "roaring",
+          "compressRunOnSerialization": true
+        },
+        "dimensionCompression": "lz4",
+        "metricCompression": "lz4",
+        "longEncoding": "longs",
+        "segmentLoader": null
+      },
+      "indexSpecForIntermediatePersists": {
+        "bitmap": {
+          "type": "roaring",
+          "compressRunOnSerialization": true
+        },
+        "dimensionCompression": "lz4",
+        "metricCompression": "lz4",
+        "longEncoding": "longs",
+        "segmentLoader": null
+      },
+      "maxPendingPersists": 0,
+      "forceGuaranteedRollup": false,
+      "reportParseExceptions": false,
+      "pushTimeout": 0,
+      "segmentWriteOutMediumFactory": null,
+      "maxNumConcurrentSubTasks": 1,
+      "maxRetry": 3,
+      "taskStatusCheckPeriodMs": 1000,
+      "chatHandlerTimeout": "PT10S",
+      "chatHandlerNumRetries": 5,
+      "maxNumSegmentsToMerge": 100,
+      "totalNumMergeTasks": 10,
+      "logParseExceptions": false,
+      "maxParseExceptions": 2147483647,
+      "maxSavedParseExceptions": 0,
+      "buildV9Directly": true,
+      "partitionDimensions": []
+    }
+  }
+}
